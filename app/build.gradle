@@ -26,6 +26,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    testAnnotationProcessor 'com.uber.motif:motif-compiler:0.3.3'
     annotationProcessor 'com.uber.motif:motif-compiler:0.3.3'
     implementation 'com.uber.motif:motif:0.3.3'
     implementation 'androidx.appcompat:appcompat:1.1.0'
