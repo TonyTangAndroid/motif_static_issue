@@ -13,10 +13,25 @@ public interface FooScope {
 
 class Foo {
 
+  private final Bar bar;
+
+  public Foo(Bar bar) {
+    this.bar = bar;
+  }
 }
+
+
+class Bar {
+
+}
+
 
 abstract class OptionModule {
 
-  abstract Foo foo();
+  abstract Bar bar();
+
+  Foo foo(Bar bar) {
+    return new Foo(bar);
+  }
 
 }
