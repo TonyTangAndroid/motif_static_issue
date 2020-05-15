@@ -30,7 +30,7 @@ abstract class OptionModule {
 
   abstract Bar bar();
 
-  Foo foo(Bar bar) {
+  static Foo foo(Bar bar) {
     return new Foo(bar);
   }
 
